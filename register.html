@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лик керама</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="main_menu">
+            <a href="index.html"><img src="img/логотип.png" alt="Логотип"></a>
+            <a href="index.html#about_us" class="link_menu"> О нас </a> 
+            <a href="masterclass.html" class="link_menu"> Мастер-классы </a>
+            <a href="groupmc.html" class="link_menu"> Групповые занятия </a>
+            <a href="event.html" class="link_menu"> Мероприятия </a> 
+            <a href="login.html" class="link_menu active-link"> Войти </a> 
+        </nav>
+    </header>
+    <div class="register">
+        <form action="index.html" class="regis_form">
+            <h3>Регистрация</h3>
+            <input type="text" class="name" placeholder="Имя" name="name" minlength="3" maxlength="20" required>
+            <input class="surname" type="text" name="surname" placeholder="Фамилия" minlength="3" maxlength="20" required>
+            <input class="phone" type="tel" placeholder="Телефон" name="phone" minlength="11" maxlength="12" required>
+            <input type="email" name="email" id="email" placeholder="Эл. почта">
+            <input id="password" class="password" type="password" name="password" placeholder="Пароль" minlength="8" maxlength="20" required>
+            <input id="confirmPassword" class="confirmPassword" type="password" name="confirmPassword" placeholder="Потвердите пароль" minlength="8" maxlength="20" required>
+            <button type="submit" class="regis">Зарегистрироваться</button>
+        </form>
+        <a href="login.html" class="rl"><p>Уже зарегистрировались? <strong>Войти</strong></p></a>
+    </div>
+	<footer>
+        <div class="foot_container">
+            <div class="column">
+                <a href="index.html"><img class="f_logo" src="img/логотип.png" alt="Логотип"></a> 
+                <a href="documents/Пользовательское_соглашение.docx" class="link">Пользовательское соглашение</a>
+                <a href="documents/Политика_конфиденциальности.docx" class="link">Политика конфиденциальности</a>
+                <p class="f_text">© Lik kerama, 2024</p>
+            </div>
+            <div class="column">
+                <h4>Меню</h4>
+                <a href="index.html" class="flink_menu"> Главная </a>
+                <a href="masterclass.html" class="flink_menu"> Мастер-классы </a>
+                <a href="groupmc.html" class="flink_menu"> Групповые занятия </a>
+                <a href="event.html" class="flink_menu"> Мероприятия </a> 
+                <a href="#about_us" class="flink_menu"> О нас </a> 
+                <a href="login.html" class="flink_menu f_active-linku"> Войти </a> 
+            </div>
+            <div class="column">
+                <h4>Контакты</h4>
+                <a class="flink_menu" href="tel:+7923616-39-02">8(923)616-39-02</a>
+				<p class="f_text">Абакан, ул. Чертыгашева, д. 85</p>
+
+                <div class="social_medias">
+                    <a href="https://vk.com/lik_kerama"><img class="social" src="img/вк.png" alt="vk"></a>
+					<a href="https://wa.me/79236163902"><img src="img/вп.png" alt="whatsapp" class="social"></a>
+					<a href="https://t.me/lik_Kerama"><img src="img/тг.png" alt="tg" class="social"></a>
+                </div>
+            </div>
+			<div class="column">
+                <h4>Режим работы</h4>
+				<p class="f_text">Пн-Пт: 11:00 - 18:00</p>
+				<p class="f_text">Сб: 11:00 - 17:00</p>
+				<p class="f_text">Вс: выходной день</p>
+			</div>
+        </div>
+	</footer>
+    <script src="register_validation.js"></script>
+</body>
+</html>

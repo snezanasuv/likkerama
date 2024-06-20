@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lik kerama</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+	<header>
+        <nav class="main_menu">
+            <a href="index.html"><img src="img/логотип.png" alt="Логотип"></a>
+            <a href="index.html#about_us" class="link_menu"> О нас </a> 
+            <a href="masterclass.html" class="link_menu"> Мастер-классы </a>
+            <a href="groupmc.html" class="link_menu"> Групповые занятия </a>
+            <a href="event.html" class="link_menu active-link"> Мероприятия </a> 
+            <a href="login.html" class="link_menu"> Войти </a> 
+        </nav>
+    </header>
+    <div class="about_mc">
+		<h3 class="title">Свидание за гончарным кругом</h3>
+		<div class="mc_imgs">
+			<img src="img/e1_1.png" alt="Мастер-класс">
+			<img src="img/e1.png" alt="Мастер-класс">
+			<img src="img/e1_2.png" alt="Мастер-класс">
+		</div>
+        <p>Свидание в гончарной мастерской — это необычно и романтично!</p>
+		<p>Такой совместный досуг не только сближает вас (ведь вы совместно обучаетесь чему-то новому и интересному), но и помогает вам выразить чувства через созидание и творчество.</p>
+        <p>На этом мастер-классе каждый сделает по одному или два функциональных изделия, которое можно будет украсить на свой вкус, а затем покрасить специальными красками.</p>
+		<p>📌Длительность: 1-2 часа</p>
+        <p>	
+            📌Стоимость - 3000 рублей: <br>
+            - 2 изделия <br>
+            - покраска изделий				
+		</p>
+		<p>
+            📌Стоимость - 4000 рублей: <br>
+            - 4 изделия <br>
+            - покраска изделий <br>
+            - чай со сладостями (шампанское или вино по договоренности) <br>
+		</p>
+        <p>
+            📌Свидание с фотографом: <br>
+            - 6000 рублей (2 изделия) <br>
+            - 7000 рублей (4 изделия) <br>
+        </p>
+		<button class="mc_btn" onclick="show()">Записаться</button>
+	</div>
+    <div class="modWind hidden">
+		<form class="application">
+			<button onclick="hide()" class="hide-btn">x</button>
+			<h3>Оставьте заявку</h3>
+			<p>Заполните поля ниже и мы свяжемся с вами в ближайшее время</p>
+			<div class="input">
+				<label for="name">Имя</label>
+            	<input type="text" id="name" name="name" minlength="3" maxlength="20" required>
+			</div>
+			<div class="input">
+				<label for="name">Номер телефона</label>
+            	<input id="phone" type="tel" name="phone" minlength="11" maxlength="12" required>
+			</div>
+			<div class="input">
+				<label for="master_class">Выберите мастер-класс</label>
+				<select name="master_class" id="master_class">
+					<option value="m_c1">Индивидуальный мастер класс за гончарным кругом</option>
+					<option value="m_c2">Мастер-класс по сложным/большим изделиям</option>
+					<option value="m_c3">Мастер-класс «Тарелочка с посланием»</option>
+					<option value="g_m_c1">Занятия для детей в группах (кружок по керамике)</option>
+					<option value="group_m_c2">Групповые мероприятия (корпоративы, школьные экскурсии и тд.)</option>
+					<option value="event" selected>Свидание за гончарным кругом</option>
+					<option value="event">День рождения в гончарной мастерской</option>
+				</select>
+			</div>
+			<div class="input">
+				<label for="contact">Как с вами связаться</label>
+				<select name="contact" id="contact">
+					<option value="tg">Telegram</option>
+					<option value="wa">WhatsApp</option>
+					<option value="vb">Viber</option>
+				</select>
+			</div>
+			<div class="input">
+				<label for="date">Желаемая дата</label>
+				<input type="date" id="date">
+			</div>
+			<div class="input">
+				<label for="quests">Количество гостей</label>
+				<input type="number" id="quests" value="1" max="10">
+			</div>
+            <button type="submit" class="regis">Записаться</button>
+		</form>
+	</div>
+    <div class="modWind-dark hidden"></div>
+	<div class="master_classes">
+		<h3 class="title">Мероприятия</h3>
+		<div class="m_c_container">
+			<div class="m_c">
+				<div class="mc_img">
+					<img src="img/e2.png" alt="Мастер-класс">
+				</div>
+				<div class="mc_text">
+					<p class="mc_title">День рождения в гончарной мастерской</p>
+					<p>от 1000 ₽</p>
+					<button class="mc_btn">Подробнее</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+        <div class="foot_container">
+            <div class="column">
+                <a href="index.html"><img class="f_logo" src="img/логотип.png" alt="Логотип"></a> 
+                <a href="documents/Пользовательское_соглашение.docx" class="link">Пользовательское соглашение</a>
+                <a href="documents/Политика_конфиденциальности.docx" class="link">Политика конфиденциальности</a>
+                <p class="f_text">© Lik kerama, 2024</p>
+            </div>
+            <div class="column">
+                <h4>Меню</h4>
+                <a href="index.html" class="flink_menu"> Главная </a>
+				<a href="index.html#about_us" class="link_menu"> О нас </a> 
+				<a href="masterclass.html" class="flink_menu"> Мастер-классы </a>
+                <a href="groupmc.html" class="flink_menu"> Групповые занятия </a>
+                <a href="event.html" class="flink_menu f_active-link"> Мероприятия </a> 
+                <a href="login.html" class="flink_menu"> Войти </a> 
+            </div>
+            <div class="column">
+                <h4>Контакты</h4>
+                <a class="flink_menu" href="tel:+7923616-39-02">8(923)616-39-02</a>
+				<p class="f_text">Абакан, ул. Чертыгашева, д. 85</p>
+
+                <div class="social_medias">
+                    <a href="https://vk.com/lik_kerama"><img class="social" src="img/вк.png" alt="vk"></a>
+					<a href="https://wa.me/79236163902"><img src="img/вп.png" alt="whatsapp" class="social"></a>
+					<a href="https://t.me/lik_Kerama"><img src="img/тг.png" alt="tg" class="social"></a>
+                </div>
+            </div>
+			<div class="column">
+                <h4>Режим работы</h4>
+				<p class="f_text">Пн-Пт: 11:00 - 18:00</p>
+				<p class="f_text">Сб: 11:00 - 17:00</p>
+				<p class="f_text">Вс: выходной день</p>
+			</div>
+        </div>
+	</footer>
+	<script src="application.js"></script>
+</body>
+</html>

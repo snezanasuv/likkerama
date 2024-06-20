@@ -1,0 +1,879 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7e8e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: #864646;
+}
+.main_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.link_menu {
+    color: #F4EDE1;
+	text-decoration: none;
+}
+.active-link, .link_menu:hover {font-weight: 600;}
+
+.prev, .next  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #864646;
+    border: none;
+    font-weight: bold;
+    color: #F4EDE1;
+    cursor: pointer;
+} 
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4EDE1;
+    -webkit-text-stroke: 0.5px #423d36;
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev:hover, .next:hover {background: #966c6c;}
+.prev:active, .next:active {background: #864646;}
+
+.dots {
+    display: flex;
+    justify-content: center;
+}
+
+.dot{
+    background: #C2888A;
+    cursor: pointer;
+}
+.active {background: #864646;}
+.dot:hover {background: #864646;}
+.dot:active {background: #d4a7a8;}
+
+#about_us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	color: #3f2424;
+	text-align: center;
+}
+.infographic_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.infographic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.infographic>img {
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+  }
+  
+@-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+}
+  
+@keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+}
+
+.title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #3f2424;
+	text-align: center;
+}
+
+p {
+	color:#292020;
+	font-family: 'Roboto', sans-serif;
+}
+
+.master_classes {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.m_c_container {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-evenly;
+}
+.m_c {
+    background-color: #d4a7a8;
+}
+.mc_img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mc_text {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: #8b5959;
+	text-align: center;
+}
+.mc_title {
+	font-weight: bold;
+	color: #3f2424;
+}
+.mc_btn {
+	color: white;
+	border: none;
+	background-color: #864646;
+    cursor: pointer;
+}
+.mc_btn:hover {
+	background-color: #854f51;
+}
+.about_mc {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.mc_imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.login {
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.login_form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #d4a7a8;
+}
+.login_form>h3 {
+	color: #3f2424;
+	font-family: 'Roboto', sans-serif;
+}
+.login_form>input {
+    background-color: #f7e8e9;
+	font-family: 'Roboto', sans-serif;
+    border: #3f2424 1.5px solid;
+    cursor: pointer;
+}
+
+.login_form>button {
+	border: none;
+	background-color: #864646;
+	color: white;
+}
+.login_form>button:hover {
+	background-color: #854f51;
+}
+.rl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-decoration: none;
+    text-align: center;
+}
+strong {color: #3f2424}
+.register {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    width: 100%;
+}
+.regis_form {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #d4a7a8;
+}
+.regis_form>h3 {
+	color: #3f2424;
+	font-family: 'Roboto', sans-serif;
+}
+.regis_form>input {
+    border: #3f2424 1.5px solid; 
+}
+.regis {
+   	background: #864646;
+	color: white;
+	border: none;
+    cursor: pointer;
+}
+.regis:hover {
+	background-color: #854f51;
+}
+.modWind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+	font-family: 'Roboto', sans-serif;
+    background-color: #e2c0c0;
+}
+.application {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    text-align: center;
+}
+.application>h3 {
+    color: #3f2424;
+    text-align: center;
+}
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input>label {align-self: flex-start}
+.input>input, .input>select {border: #3f2424 1.5px solid}
+.hidden { 
+    display: none;
+}
+.hide-btn {
+    background-color: #e2c0c0;
+    border: 0;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+    align-self: flex-end;
+    font-size: 1emx;
+    cursor: pointer;
+}
+
+.when_modal {
+    background-color: rgb(37, 37, 37);
+    opacity: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+    margin-top: auto;
+	justify-content: center;
+	align-items: center;
+    background-color: #864646;
+}
+.foot_container {
+    width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.column>h4 {
+    color: #F2EEE2;
+}
+.flink_menu, .link, .f_text, .f_active-link:hover {
+    color: #F2EEE2;
+	text-decoration: none;
+}
+.f_active-link, .flink_menu:hover, .link:hover{
+    color: #F2EEE2; 
+    text-decoration: underline;
+    font-size: medium;
+}
+a[href^="tel"]::before {
+	content: '📞'; 
+	padding-right: 5px; 
+    vertical-align: center; 
+	color: #F2EEE2;
+}
+.social_medias {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@media screen and (min-width:1024px) and (max-width: 1920px) {
+	.main_menu {
+		width: 80%;
+		padding: 5px;
+		font-size: 0.9em;
+	}
+    .main_menu>a>img {
+        width: 200px;
+    }
+    .prev, .next  {
+        height: 40px;
+        margin: 20px;
+        width: 40px;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+    .slide {
+        font-size: 1.6rem;
+        border-radius: 30px;
+        min-height: 400px;
+        width: 100%;
+    }
+    .slider {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .dots {
+        width: 20%;
+    }
+    .dot{
+        margin: 10px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    } 
+    #about_us {
+    font-size: 1 rem;
+    }
+    .infographic_container {
+        width: 80%;
+    }
+    .infographic {
+        width: 25%;
+    }
+    .infographic>img {
+        width: 100px;
+    }
+    .master_classes {
+        margin: 20px;
+    }
+    .m_c_container {
+        width: 80%;
+    }
+    .m_c {
+        margin: 10px;
+        border-radius: 20px;
+        width: 400px;
+    }
+    .mc_img>img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+    }
+    .mc_text {
+        padding: 10px;
+    }
+    .mc_btn {
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .about_mc {
+        width: 80%;
+    }
+    .mc_imgs>img {
+        width: 30%;
+        border-radius: 15px;
+    }
+    .login_form {
+        margin-top: 20px;
+        padding: 15px;
+        width: 30%;
+        border-radius: 15px;
+    }
+    .login_form>input {
+        width: 65%;
+        margin: 5px;
+        border: #3f2424 1.5px solid;
+        border-radius: 15px;
+        padding: 6px;
+    }
+    .login_form>button {
+        border-radius: 15px;
+        padding: 10px;
+        width: 70%;
+    }
+    .rl {width: 20%}
+    .regis_form {
+        width: 30%;
+        margin: 15px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .regis_form>input { 
+        background-color: #f7e8e9;
+        width: 200px;
+        padding: 8px;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .regis {
+        width: 40%;
+        margin: 10px;
+        font-size: 0.8rem;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .modWind {
+        padding: 15px;
+        width: 25%;
+        border-radius: 10px;
+    }
+    .hide-btn {
+        font-size: 1em;
+    }
+    .application>h3 {
+        margin: 5px;
+    }
+    .input {
+        width: 90%;
+        margin: 3px;
+    }
+    .input>input, .input>select {
+        background-color: #f7e8e9;
+        padding: 8px;
+        border-radius: 15px;
+        margin: 5px;
+        width: 100%;
+    }
+    .foot_container {
+        padding: 15px 0;
+    }
+    .f_logo{
+        width: 17vw;
+    }
+    .social {
+        margin-top: 10px;					
+        margin-right: 10px;
+        width: 30px;
+    }
+    .column {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .main_menu {
+		width: 80%;
+		padding: 5px;
+		font-size: 0.6em;
+	}
+    .main_menu>a>img {
+        width: 130px;
+    }
+    .slider {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .prev, .next  {
+        height: 20px;
+        margin: 10px;
+        width: 20px;
+        border-radius: 5px;
+    }
+    .slide {
+        font-size: 1rem;
+        border-radius: 20px;
+        min-height: 200px;
+        width: 100%;
+    }
+    .dots {
+        width: 70%;
+    }
+    .dot{
+        margin: 5px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+    } 
+	.title {
+		font-size: 0.7rem;
+	}
+    #about_us {
+        width: 80%;
+        font-size: 0.6rem;
+    }
+    .infographic_container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .infographic {
+        width: 50%;
+    }
+    .infographic>img {
+        width: 50px;
+    }
+    .master_classes {
+        margin: 10px;
+    }
+    .m_c_container {
+        width: 80%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 0.6rem;
+    }
+    .m_c {
+        margin: 5px;
+        border-radius: 15px;
+        width: 45%;
+    }
+    .mc_img>img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+    }
+    .mc_text {
+        padding: 10px;
+    }
+    .mc_btn {
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+    }
+    .about_mc {
+        width: 70%;
+        font-size: 0.7rem;
+    }
+    .mc_imgs>img {
+        width: 40%;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .login_form {
+        margin-top: 20px;
+        padding: 15px;
+        width: 30%;
+        border-radius: 15px;
+        font-size: 0.7rem;
+    }
+    .login_form>input {
+        width: 65%;
+        margin: 5px;
+        border: #3f2424 1.5px solid;
+        border-radius: 15px;
+        padding: 5px;
+        font-size: 0.5rem;
+    }
+    .login_form>button {
+        border-radius: 15px;
+        padding: 5px;
+        width: 70%;
+        font-size: 0.5rem;
+    }
+    .rl {
+        width: 20%;
+        font-size: 0.7rem;
+    }
+    .regis_form {
+        width: 35%;
+        margin: 15px;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+    }
+    .regis_form>input { 
+        background-color: #f7e8e9;
+        width: 60%;
+        padding: 8px;
+        border-radius: 15px;
+        margin: 5px;
+        font-size: 0.5rem;
+    }
+    .regis {
+        width: 50%;
+        margin: 10px;
+        font-size: 0.8rem;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 0.6rem;
+    }
+    .modWind {
+        padding: 15px;
+        width: 40%;
+        border-radius: 10px;
+        font-size: 0.7rem;
+    }
+    .hide-btn {
+        font-size: 1.3em;
+    }
+    .application>h3 {
+        margin: 5px;
+    }
+    .input {
+        width: 90%;
+        margin: 3px;
+    }
+    .input>input, .input>select { 
+        background-color: #f7e8e9;
+        width: 60%;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+        font-size: 0.5rem;
+        width: 100%;
+        margin: 3px;
+    }
+	.foot_container {
+		font-size: 0.5rem;
+		padding: 10px;
+	}
+	.column {
+		height: 100px;
+	}
+	.f_logo{
+		width: 15vw;
+	}
+    .f_active-link, .flink_menu:active {font-size: 0.5rem;}
+	a[href^="tel"]::before {
+		padding-right: 5px; 
+		vertical-align: center; 
+		font-size: 1em; 
+	}
+	.social {
+		margin-top: 6px;					
+		margin-right: 6px;
+		width: 13px;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .main_menu {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 10px 0;
+		margin: 0;
+		width: 100%;
+		font-size: 0.5em;
+	}
+    .main_menu>a>img {
+        width: 100px;
+    }
+    .slider {
+        width: 100%;
+    }
+    .prev, .next  {
+        display: none;
+    }
+    .slide {
+        font-size: 0.7rem;
+        min-height: 130px;
+        width: 100%;
+    }
+    .dots {
+        width: 80%;
+    }
+    .dot{
+        margin: 3px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    } 
+	.title {
+		font-size: 0.5rem;
+	}
+    #about_us {
+        width: 80%;
+        font-size: 0.4rem;
+    }
+    .infographic_container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .infographic {
+        width: 100%;
+    }
+    .infographic>img {
+        width: 30px;
+    }
+    .master_classes {
+        margin: 10px;
+    }
+    .m_c_container {
+        width: 75%;
+        flex-wrap: wrap;
+        font-size: 0.4rem;
+    }
+    .m_c {
+        margin: 5px;
+        border-radius: 15px;
+        width: 70%;
+    }
+    .mc_img>img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+    }
+    .mc_text {
+        padding: 10px;
+    }
+    .mc_btn {
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 0.4rem;
+    }
+    .about_mc {
+        width: 65%;
+        font-size: 0.5rem;
+    }
+    .mc_imgs>img {
+        width: 70%;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .login_form {
+        margin-top: 20px;
+        padding: 15px;
+        width: 50%;
+        border-radius: 15px;
+        font-size: 0.5rem;
+    }
+    .login_form>input {
+        width: 70%;
+        margin: 5px;
+        border: #3f2424 1.5px solid;
+        border-radius: 15px;
+        padding: 5px;
+        font-size: 0.4rem;
+    }
+    .login_form>button {
+        border-radius: 15px;
+        padding: 5px;
+        width: 75%;
+        font-size: 0.4rem;
+    }
+    .rl {
+        width: 20%;
+        font-size: 0.5rem;
+    }
+    .regis_form {
+        width: 50%;
+        margin: 15px;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 0.5rem;
+    }
+    .regis_form>input { 
+        background-color: #f7e8e9;
+        width: 60%;
+        padding: 5px;
+        border-radius: 15px;
+        margin: 3px;
+        font-size: 0.4rem;
+    }
+    .regis {
+        width: 60%;
+        margin: 5px;
+        font-size: 0.8rem;
+        border-radius: 15px;
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+    .modWind {
+        padding: 15px;
+        width: 70%;
+        border-radius: 10px;
+        font-size: 0.7rem;
+    }
+    .application>h3 {
+        margin: 5px;
+    }
+    .input {
+        width: 90%;
+        margin: 3px;
+    }
+    .input>input, .input>select { 
+        background-color: #f7e8e9;
+        width: 60%;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+        font-size: 0.5rem;
+        width: 100%;
+        margin: 3px;
+    }
+    .foot_container {
+		width: 100%;
+		flex-direction: column;
+		font-size: 0.5rem;
+		padding: 5px;
+	}
+	.column {
+		width: 80%;
+		align-items: center;
+		justify-content: space-between;
+        margin: 5px;
+	}
+	.column:first-child {order: 3;}
+	.f_logo{
+		width: 15vw;
+	}
+    .f_active-link, .flink_menu:active {font-size: 0.5rem;}
+	a[href^="tel"]::before {
+		vertical-align: center; 
+		font-size: 1em; 
+	}
+	.social {
+		margin-top: 6px;					
+		margin-right: 6px;
+		width: 13px;
+	}
+}
+
